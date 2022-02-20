@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^home$ main.php?page=home [L]
+RewriteRule ^about$ main.php?page=about [L]
+RewriteRule ^dm$ main.php?page=dm [L]
+RewriteRule ^service$ main.php?page=service [L]
+RewriteRule ^portfolio$ main.php?page=portfolio [L]
+RewriteRule ^etiologi$ main.php?page=etiologi [L]
+RewriteRule ^resiko$ main.php?page=resiko [L]
+RewriteRule ^page-(.*)$ main.php?page=portfolio&hal=$1 [L]
+
+RewriteRule ^contact$ main.php?page=contact [L]
+RewriteRule ^contact-success$ main.php?page=contact&alert=1 [L]
+RewriteRule ^registrasi$ main.php?page=registrasi [L]
+RewriteRule ^registrasi-success$ main.php?page=registrasi&alert=1 [L]
+RewriteRule ^register.php$ main.php?page=register.php [L]
+RewriteRule ^register.php-success$ main.php?page=register.php&alert=1 [L]
+
+Options All -Indexes
+</IfModule>
